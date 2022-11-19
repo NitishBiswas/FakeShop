@@ -50,7 +50,7 @@ const Cart = () => {
                 <div>
                     <button className='check-out' onClick={checkOut}>Check out</button>
                 </div>
-            </div> : navigate('/')}
+            </div> : navigate('/FakeShop')}
         </>
 
     )
