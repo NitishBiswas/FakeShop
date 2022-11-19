@@ -29,7 +29,7 @@ const Cart = () => {
             progress: undefined,
             theme: "colored",
         });
-        navigate('/');
+        navigate('/FakeShop');
         window.screenTop(0, 0);
     }
 
