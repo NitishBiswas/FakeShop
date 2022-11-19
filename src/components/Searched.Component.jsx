@@ -9,7 +9,7 @@ const Searched = ({ searchText, onChange }) => {
     const searchedProducts = products.filter((product) => product.title.toUpperCase().includes(searchText.toUpperCase()) && product)
 
     const navigateToDetails = (product) => {
-        navigate('/details', { state: { product: product } });
+        navigate('/FakeShop/details', { state: { product: product } });
         window.scrollTo(0, 0);
         onChange();
     }

@@ -16,7 +16,7 @@ const CarouselComponent = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <button onClick={() => navigate('/all-products')} className="btn btn-info my-4" style={{ width: '220px' }}>Buy now</button>
+                    <button onClick={() => navigate('/FakeShop/all-products')} className="btn btn-info my-4" style={{ width: '220px' }}>Buy now</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,7 +27,7 @@ const CarouselComponent = () => {
                 />
 
                 <Carousel.Caption>
-                    <button onClick={() => navigate('/all-products')} className="btn btn-danger my-4" style={{ width: '220px' }}>Buy now</button>
+                    <button onClick={() => navigate('/FakeShop/all-products')} className="btn btn-danger my-4" style={{ width: '220px' }}>Buy now</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -38,7 +38,7 @@ const CarouselComponent = () => {
                 />
 
                 <Carousel.Caption>
-                    <button onClick={() => navigate('/all-products')} className="btn btn-info my-4" style={{ width: '220px' }}>Buy now</button>
+                    <button onClick={() => navigate('/FakeShop/all-products')} className="btn btn-info my-4" style={{ width: '220px' }}>Buy now</button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

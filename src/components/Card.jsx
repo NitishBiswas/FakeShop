@@ -74,7 +74,7 @@ const Card = ({ product }) => {
     }
 
     const navigateToDetails = () => {
-        navigate('/details', { state: { product: product } });
+        navigate('/FakeShop/details', { state: { product: product } });
         window.scrollTo(0, 0);
     }
 

@@ -74,29 +74,29 @@ const Footer = () => {
                                 <div className='d-flex justify-content-between'>
                                     <div className='col-md-6 my-4'>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/');
+                                            navigate('/FakeShop');
                                             window.scrollTo(0, 0);
                                         }}>Home</h6>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/all-products');
+                                            navigate('/FakeShop/all-products');
                                             window.scrollTo(0, 0);
                                         }}>All products</h6>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/men-products');
+                                            navigate('/FakeShop/men-products');
                                             window.scrollTo(0, 0);
                                         }}>Men's clothing</h6>
                                     </div>
                                     <div className='col-md-6 my-4'>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/women-products');
+                                            navigate('/FakeShop/women-products');
                                             window.scrollTo(0, 0);
                                         }}>Women's clothing</h6>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/electronic-products');
+                                            navigate('/FakeShop/electronic-products');
                                             window.scrollTo(0, 0);
                                         }}>Electronics</h6>
                                         <h6 className='menu-text' onClick={() => {
-                                            navigate('/jewelry-products');
+                                            navigate('/FakeShop/jewelry-products');
                                             window.scrollTo(0, 0);
                                         }}>Jewelry</h6>
                                     </div>

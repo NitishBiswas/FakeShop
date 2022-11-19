@@ -34,7 +34,7 @@ const NavComponent = () => {
 
     const navigateToCart = () => {
         if (totalCart !== 0 || cartCount !== 0) {
-            navigate('/carts');
+            navigate('/FakeShop/carts');
             window.scrollTo(0, 0);
             setActiveClass('carts');
         } else {
@@ -59,7 +59,7 @@ const NavComponent = () => {
         <>
             <Navbar bg="dark" variant='dark' expand="lg" className='sticky-top'>
                 <Container className='container' fluid>
-                    <Navbar.Brand as={Link} to='/' className='p-0 brand-name fs-3 text-info' onClick={() => {
+                    <Navbar.Brand as={Link} to='/FakeShop' className='p-0 brand-name fs-3 text-info' onClick={() => {
                         window.scrollTo(0, 0);
                         setActiveClass('home');
                     }}>
@@ -73,23 +73,23 @@ const NavComponent = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link as={Link} to='/all-products' className={activeClass === 'allProducts' ? 'active' : ''} onClick={() => {
+                            <Nav.Link as={Link} to='/FakeShop/all-products' className={activeClass === 'allProducts' ? 'active' : ''} onClick={() => {
                                 window.scrollTo(0, 0);
                                 setActiveClass('allProducts');
                             }}>All Products</Nav.Link>
-                            <Nav.Link as={Link} to='/men-products' className={activeClass === 'menProducts' ? 'active' : ''} onClick={() => {
+                            <Nav.Link as={Link} to='/FakeShop/men-products' className={activeClass === 'menProducts' ? 'active' : ''} onClick={() => {
                                 window.scrollTo(0, 0);
                                 setActiveClass('menProducts');
                             }}>Men's clothing</Nav.Link>
-                            <Nav.Link as={Link} to='/women-products' className={activeClass === 'womenProducts' ? 'active' : ''} onClick={() => {
+                            <Nav.Link as={Link} to='/FakeShop/women-products' className={activeClass === 'womenProducts' ? 'active' : ''} onClick={() => {
                                 window.scrollTo(0, 0);
                                 setActiveClass('womenProducts');
                             }}>Women's clothing</Nav.Link>
-                            <Nav.Link as={Link} to='/electronic-products' className={activeClass === 'electronicProducts' ? 'active' : ''} onClick={() => {
+                            <Nav.Link as={Link} to='/FakeShop/electronic-products' className={activeClass === 'electronicProducts' ? 'active' : ''} onClick={() => {
                                 window.scrollTo(0, 0);
                                 setActiveClass('electronicProducts');
                             }}>Electronics</Nav.Link>
-                            <Nav.Link as={Link} to='/jewelry-products' className={activeClass === 'jewelryProducts' ? 'active' : ''} onClick={() => {
+                            <Nav.Link as={Link} to='/FakeShop/jewelry-products' className={activeClass === 'jewelryProducts' ? 'active' : ''} onClick={() => {
                                 window.scrollTo(0, 0);
                                 setActiveClass('jewelryProducts');
                             }}>Jewelry</Nav.Link>

@@ -58,7 +58,7 @@ const CartCard = ({ cart, changePrice }) => {
                 })
             }
             if (item.count - 1 === 0) {
-                navigate('/');
+                navigate('/FakeShop');
                 window.scrollTo(0, 0);
             }
         })

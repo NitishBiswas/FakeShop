@@ -34,14 +34,14 @@ function App() {
     <div className="App">
       <NavComponent />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/all-products" element={<AllProductsComponent />} />
-        <Route path="/men-products" element={<MenClothingComponent />} />
-        <Route path="/women-products" element={<WomenClothingComponent />} />
-        <Route path="/electronic-products" element={<ElectronicProductsComponent />} />
-        <Route path="/jewelry-products" element={<JeweleryProductsComponent />} />
-        <Route path="/carts" element={<Cart />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/FakeShop" element={<Home />} />
+        <Route path="/FakeShop/all-products" element={<AllProductsComponent />} />
+        <Route path="/FakeShop/men-products" element={<MenClothingComponent />} />
+        <Route path="/FakeShop/women-products" element={<WomenClothingComponent />} />
+        <Route path="/FakeShop/electronic-products" element={<ElectronicProductsComponent />} />
+        <Route path="/FakeShop/jewelry-products" element={<JeweleryProductsComponent />} />
+        <Route path="/FakeShop/carts" element={<Cart />} />
+        <Route path="/FakeShop/details" element={<Details />} />
       </Routes>
       <Footer />
       <ToastContainer />
