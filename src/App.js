@@ -12,7 +12,7 @@ import WomenClothingComponent from './components/WomenClothingComponent';
 import ElectronicProductsComponent from './components/ElectronicProductsComponent';
 import JeweleryProductsComponent from './components/JeweleryProductsComponent';
 import Cart from './pages/Cart';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer.component';
 import Details from './pages/Details';
@@ -24,6 +24,21 @@ function App() {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
       .then(data => dispatch(setProducts(data)))
+  }
+
+  var alerted = localStorage.getItem('FakeShopAlert') || '';
+  if (alerted !== 'yes') {
+    toast.success('Wlecome to FakeShop!', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+    localStorage.setItem('FakeShopAlert', 'yes');
   }
 
   useEffect(() => {
