@@ -219,6 +219,32 @@
   cursor: pointer;
 }
 
+.login-profile {
+  cursor: pointer;
+  color: #b6b6b6;
+}
+
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.profile-view {
+  position: absolute;
+  right: 8%;
+  top: 70px;
+  height: auto;
+  width: 300px;
+  background-color: white;
+}
+
 @media screen and (max-width: 480px) {
   .search-view {
       position: absolute;
@@ -228,6 +254,13 @@
       width: 100%;
       border-radius: 10px;
       overflow: scroll;
+    }
+    .profile-view{
+      right: 0px;
+        top: 310px;
+        height: auto;
+        width: 100%;
+        overflow: scroll;
     }
 }
 
@@ -241,4 +274,12 @@
       border-radius: 10px;
       overflow: scroll;
   }
+    .profile-view {
+      position: absolute;
+      right: 13%;
+      top: 210px;
+      height: auto;
+      width: 300px;
+      background-color: white;
+    }
 }

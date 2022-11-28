@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 let db = new Localbase('db')
 
 const Cart = () => {
+    const user = useSelector(user => user.user.users)
     const [carts, setcarts] = useState([]);
     const total = useSelector(totalPrice => totalPrice.totalCarts.totalPrice);
     const navigate = useNavigate();
@@ -19,18 +20,23 @@ const Cart = () => {
     }
 
     const checkOut = () => {
-        toast.success('Thank you!', {
-            position: "top-center",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-        });
-        navigate('/FakeShop');
-        window.screenTop(0, 0);
+        if (user !== null) {
+            navigate('/FakeShop/payment');
+            window.scrollTo(0, 0);
+        } else {
+            toast.info('Please login frist!', {
+                position: "top-center",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+            navigate('/FakeShop/login', { state: '/FakeShop/carts' });
+            window.scrollTo(0, 0);
+        }
     }
 
     useEffect(() => {
